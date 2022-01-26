@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <form  method="get" class="create-form">
+            <div>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre"required>
+            </div>
+            <div>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuario" required>
+            </div>
+            <div>
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+            </div>
+            <div>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required >
+            </div>
+            <div class="perfilUsuario"> <!--En radio se pone required en una opción-->
+                <label for="perfilUsuario" >Perfil de Usuario:</label>
+                <input type="radio" name="perfilUsuario" id="perfilUsuario" required>Comprar
+                <input type="radio" name="perfilUsuario" id="perfilUsuario">Vender   
+            </div>
+            <div>
+                <label class="categorias">Categorias de Interés:
+                    <div>
+                    <label> <input type="checkbox" name="interes" value="elec">Electro</label>
+	                <label> <input type="checkbox" name="interes" value="moda">Moda</label>
+	                <label> <input type="checkbox" name="interes" value="hogar">Hogar</label>
+	                <label> <input type="checkbox" name="interes" value="juguet">Jugueteria</label>
+	                <label> <input type="checkbox" name="interes" value="vidaSana">Vida Sana</label>
+                </div>
+                </label>
+                <div>
+                    <label>Foto de Usuario</label>
+                    <input type="file" name="fotoUsuario" id="fotoUsuario" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="password" name="check_password" id="check_password" placeholder="Confirmar Password" required>
+                </div>
+                <div>
+                        <button type="submit" value="Guardar y volver al Home"><a href="/">Guardar y volver al Home</a></button>
+                
+                </div>
+
+                <div>
+                        <input type="reset" value="Borrar">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
